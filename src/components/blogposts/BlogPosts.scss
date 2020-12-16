@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+.blog-posts {
+  width: 80%;
+  margin: 50px auto;
+
+  .title {
+    text-align: center;
+  }
+
+  .posts-wrapper {
+    margin-top: 50px;
+
+    .link {
+      text-decoration: none;
+    }
+
+    .post-title {
+      font-size: 1.5rem;
+      line-height: 2;
+      color: #b78ec2;
+      font-family: "Montserrat", sans-serif;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
