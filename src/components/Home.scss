@@ -1,0 +1,55 @@
+.home {
+  .hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 64px);
+
+    .description {
+      .typed-name {
+        color: #b78ec2;
+      }
+
+      .button {
+        margin-top: 10px;
+        text-align: center;
+      }
+    }
+
+    .image-wrapper {
+      height: 100%;
+      display: flex;
+      justify-items: center;
+      align-items: center;
+
+      .image {
+        object-fit: contain;
+        width: 500px;
+        height: 550px;
+      }
+    }
+  }
+
+  .about p {
+    font-size: 1em;
+    line-height: 1.4;
+    text-align: justify;
+  }
+
+  .contact {
+    margin-top: 50px;
+    padding-bottom: 20px;
+
+    .contact-details {
+      display: flex;
+      justify-content: space-evenly;
+      text-align: center;
+
+      .detail {
+        width: 250px;
+        box-shadow: 0 0.5rem 1rem rgba(73, 72, 72, 0.15);
+      }
+    }
+  }
+}
