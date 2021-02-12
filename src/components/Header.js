@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { AppBar, List, ListItem, ListItemText } from "@material-ui/core";
 import { makeStyles } from "@material-ui/core/styles";
 
@@ -19,6 +19,10 @@ const useStyles = makeStyles({
     textDecoration: "none",
     textTransform: "uppercase",
     color: "white",
+  },
+  activeLinkText: {
+    color: "#b78ec2",
+    borderBottom: "2px solid #b78ec2",
   },
   logoText: {
     textDecoration: "none",
@@ -50,11 +54,16 @@ const Header = () => {
           className={classes.navDisplayFlex}
         >
           {navLinks.map(({ title, path }) => (
-            <Link to={path} className={classes.linkText}>
+            <NavLink
+              key={title}
+              to={path}
+              className={classes.linkText}
+              activeClassName={classes.activeLinkText}
+            >
               <ListItem button>
                 <ListItemText primary={title} />
               </ListItem>
-            </Link>
+            </NavLink>
           ))}
         </List>
       </div>
