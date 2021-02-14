@@ -11,18 +11,30 @@
   .posts-wrapper {
     margin-top: 50px;
 
-    .link {
-      text-decoration: none;
-    }
+    .post {
+      width: 100%;
+      margin: 10px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
 
-    .post-title {
-      font-size: 1.5rem;
-      line-height: 2;
-      color: #b78ec2;
-      font-family: "Montserrat", sans-serif;
+      .link {
+        text-decoration: none;
+      }
 
-      &:hover {
-        text-decoration: underline;
+      .post-title {
+        font-size: 1.5rem;
+        color: #b78ec2;
+        font-family: "Montserrat", sans-serif;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .date {
+        color: #a484ad;
       }
     }
   }

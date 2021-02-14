@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import sanityClient from "../../client";
+import { format } from "date-fns";
 import "./BlogPosts.scss";
 
 const BlogPosts = () => {
@@ -12,6 +13,7 @@ const BlogPosts = () => {
         `*[_type == "post"]{
       title,
       slug,
+      publishedAt,
     }`
       )
       .then((data) => setPostsData(data))
@@ -28,15 +30,20 @@ const BlogPosts = () => {
       <div className='posts-wrapper'>
         {postsData &&
           postsData.map((post, index) => (
-            <Link
-              to={"/" + post.slug.current}
-              key={post.slug.current}
-              className='link'
-            >
-              <span key={index}>
-                <div className='post-title'>{post.title}</div>
-              </span>
-            </Link>
+            <div key={index} className='post'>
+              <Link
+                to={"/" + post.slug.current}
+                key={post.slug.current}
+                className='link'
+              >
+                <span key={index}>
+                  <div className='post-title'>{post.title}</div>
+                </span>
+              </Link>
+              <div className='date'>
+                {format(new Date(post.publishedAt), "dd MMM yyyy")}
+              </div>
+            </div>
           ))}
       </div>
     </div>
