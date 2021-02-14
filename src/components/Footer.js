@@ -10,7 +10,7 @@ const Footer = () => {
         <LinkedInIcon className='icon' />
       </div>
       <p>
-        Coded with <span class='heart-emoji'>❤ </span>by
+        Coded with <span className='heart-emoji'>❤ </span>by
         <strong> Monaliza Dasig</strong>.
       </p>
     </div>

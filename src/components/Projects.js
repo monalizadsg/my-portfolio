@@ -37,9 +37,11 @@ const Projects = () => {
     <div className='projects'>
       {projects.map((project) => {
         return (
-          <div key={project.id} className='project-card'>
+          <div
+            key={project.id}
+            className={`project-card ${project.id % 2 === 0 ? "left" : ""}`}
+          >
             <Card className='image-wrapper'>
-              <div className='overlay'></div>
               <img src={project.imgUrl} alt='budget' className='image' />
             </Card>
             <Card className='project-details'>

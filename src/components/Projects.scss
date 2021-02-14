@@ -1,18 +1,21 @@
 .projects {
-  // border: 1px solid red;
-  margin-top: 60px;
+  margin: 60px 0;
   display: flex;
   flex-wrap: wrap;
-  overflow: hidden;
-  height: 100%;
-  margin-bottom: 60px;
-  justify-content: center;
 
   .project-card {
-    // border: 1px solid red;
     width: 100%;
-    margin-top: 30px;
+    margin: 50px 0;
     position: relative;
+
+    &.left {
+      display: flex;
+      flex-direction: row-reverse;
+
+      .project-details {
+        left: 0;
+      }
+    }
 
     .image-wrapper {
       width: 60%;
@@ -24,7 +27,7 @@
         height: 380px;
         object-fit: cover;
         object-position: center center;
-        opacity: 0.7;
+        opacity: 0.4;
 
         &:hover {
           opacity: 1;
