@@ -1,6 +1,8 @@
 import React from "react";
 import Typed from "react-typed";
 import { Typography, Grid } from "@material-ui/core";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import "./Home.scss";
 
 const Home = () => {
@@ -21,9 +23,10 @@ const Home = () => {
               backSpeed={40}
             />
           </Typography>
-          <Typography variant='h5'>
-            I'm currently focused on React to build websites.
-          </Typography>
+          <div className='social-icons'>
+            <GitHubIcon className='icon' />
+            <LinkedInIcon className='icon' />
+          </div>
         </div>
         <div className='image-wrapper'>
           <img
@@ -40,21 +43,23 @@ const Home = () => {
               <h2 className='heading'>About</h2>
             </div>
             <p>
-              I'm a self-taught developer. I started learning HTML, CSS and
-              Javascript. And now, I'm currently learning React. I'm very
-              passionate about learning and coding has been playing a huge part
-              of my daily life for the past few months. I'm self-driven person
-              who enjoys building apps and websites, and I quickly learn by
-              doing which took me out of my comfort zone.
+              I was first introduced to coding because of my curiosity. I
+              started learning HTML, CSS, and Javascript. And now, I'm currently
+              learning React to further my knowledge of front-end development.
+              I'm very passionate about learning and coding has been playing a
+              huge part in my daily life for the past few months. I'm a
+              self-driven person who enjoys building apps and websites, eager to
+              learn new skills, and I quickly learn by doing which always takes
+              me out of my comfort zone.
             </p>
             <p>
               I'm fascinated with technology as there is so much to learn new
               things every day. Along my learning journey, I was able to train
-              myself consistently and pushing my own limits to discover ways how
-              to solve a problem. I firmly believe that practice is the key to
+              myself consistently and pushing my limits to discover ways how to
+              solve a problem. I firmly believe that practice is the key to
               become better at something. I always enjoy learning new things and
-              coding keeps me uncomfortable but it is the only way to learn and
-              grow.
+              coding keeps challenging me and makes me uncomfortable but I know
+              that it is the only way to learn and grow.
             </p>
 
             <div>
@@ -62,14 +67,12 @@ const Home = () => {
               <div className='skill-container'>
                 <Grid container spacing={2} className='grid'>
                   <Grid item xs={1}>
-                    {/* <Paper className={classes.paper}> */}
                     <div className='skill-card'>
                       <div className='skill-title'>HTML5</div>
                       <div className='skill-logo'>
                         <img src={"/assets/images/html.png"} alt='icon' />
                       </div>
                     </div>
-                    {/* </Paper> */}
                   </Grid>
                   <Grid item xs={1}>
                     <div className='skill-card'>
