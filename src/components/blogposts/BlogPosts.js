@@ -16,7 +16,12 @@ const BlogPosts = () => {
       publishedAt,
     }`
       )
-      .then((data) => setPostsData(data))
+      .then((data) => {
+        const sortedData = data
+          .slice()
+          .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
+        setPostsData(sortedData);
+      })
       .catch(console.error);
   }, []);
 
