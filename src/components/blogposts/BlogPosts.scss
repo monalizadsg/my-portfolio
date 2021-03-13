@@ -2,7 +2,7 @@
 
 .blog-posts {
   width: 80%;
-  margin: 50px auto;
+  margin: 10% auto;
 
   .title {
     text-align: center;
@@ -35,6 +35,27 @@
 
       .date {
         color: #a484ad;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .blog-posts {
+    width: 95%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .blog-posts {
+    .posts-wrapper {
+      .post {
+        flex-direction: column;
+        align-items: flex-start;
+
+        .post-title {
+          font-size: 1.3rem;
+        }
       }
     }
   }

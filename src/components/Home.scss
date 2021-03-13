@@ -3,7 +3,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
     height: calc(100vh - 64px);
 
     .description {
@@ -22,19 +21,17 @@
 
       .icon {
         margin-right: 10px;
+        font-size: 2rem;
       }
     }
 
     .image-wrapper {
-      height: 100%;
-      display: flex;
-      justify-items: center;
-      align-items: center;
+      max-width: 600px;
 
       .image {
         object-fit: contain;
-        width: 500px;
-        height: 550px;
+        width: 100%;
+        height: auto;
       }
     }
   }
@@ -95,7 +92,70 @@
       .detail {
         padding-top: 10px;
         width: 300px;
+        min-width: 250px;
+        margin-right: 20px;
         box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .home {
+    .hero {
+      justify-content: center;
+      padding: 0 20px;
+      .description {
+        width: 100%;
+
+        .MuiTypography-h1 {
+          font-size: 5rem;
+        }
+      }
+      .image-wrapper {
+        display: none;
+      }
+    }
+
+    article {
+      .card {
+        box-shadow: none;
+        border: none;
+        padding: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .home {
+    .hero {
+      width: auto;
+      .description {
+        .MuiTypography-h1 {
+          font-size: 3rem;
+        }
+        .MuiTypography-h3 {
+          font-size: 2rem;
+        }
+      }
+      .image-wrapper {
+        display: none;
+      }
+    }
+
+    .contact {
+      .contact-details {
+        flex-direction: column;
+        align-items: center;
+
+        .detail {
+          margin-bottom: 20px;
+        }
       }
     }
   }

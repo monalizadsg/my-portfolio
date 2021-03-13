@@ -5,6 +5,9 @@ body,
 #root,
 .App {
   height: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
 
 body {
@@ -12,9 +15,16 @@ body {
   font-family: "Raleway", sans-serif;
   background-color: #3a3a3a;
   color: #ffffff;
+  overflow-x: hidden !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+/* @media screen and (max-width: 768px) {
+  html {
+    overflow-x: hidden;
+  }
+} */

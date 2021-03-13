@@ -66,7 +66,7 @@ const Home = () => {
               <p>Here's a few technologies I've been working with recently:</p>
               <div className='skill-container'>
                 <Grid container spacing={2} className='grid'>
-                  <Grid item xs={1}>
+                  <Grid item xs={3} sm={2} md={1}>
                     <div className='skill-card'>
                       <div className='skill-title'>HTML5</div>
                       <div className='skill-logo'>
@@ -74,7 +74,7 @@ const Home = () => {
                       </div>
                     </div>
                   </Grid>
-                  <Grid item xs={1}>
+                  <Grid item xs={3} sm={2} md={1}>
                     <div className='skill-card'>
                       <div className='skill-title'>CSS3</div>
                       <div className='skill-logo'>
@@ -82,7 +82,7 @@ const Home = () => {
                       </div>
                     </div>
                   </Grid>
-                  <Grid item xs={1}>
+                  <Grid item xs={3} sm={2} md={1}>
                     <div className='skill-card'>
                       <div className='skill-title'>JavaScript</div>
                       <div className='skill-logo'>
@@ -90,7 +90,7 @@ const Home = () => {
                       </div>
                     </div>
                   </Grid>
-                  <Grid item xs={1}>
+                  <Grid item xs={3} sm={2} md={1}>
                     <div className='skill-card'>
                       <div className='skill-title'>React</div>
                       <div className='skill-logo'>
@@ -98,7 +98,7 @@ const Home = () => {
                       </div>
                     </div>
                   </Grid>
-                  <Grid item xs={1}>
+                  <Grid item xs={3} sm={2} md={1}>
                     <div className='skill-card'>
                       <div className='skill-title'>Sass</div>
                       <div className='skill-logo'>
@@ -106,7 +106,7 @@ const Home = () => {
                       </div>
                     </div>
                   </Grid>
-                  <Grid item xs={1}>
+                  <Grid item xs={3} sm={2} md={1}>
                     <div className='skill-card'>
                       <div className='skill-title'>Material UI</div>
                       <div className='skill-logo'>
@@ -114,7 +114,7 @@ const Home = () => {
                       </div>
                     </div>
                   </Grid>
-                  <Grid item xs={1}>
+                  <Grid item xs={3} sm={2} md={1}>
                     <div className='skill-card'>
                       <div className='skill-title'>Firebase</div>
                       <div className='skill-logo'>
