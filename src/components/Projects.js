@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, CardContent, Typography, Chip } from "@material-ui/core";
-import { Link } from "react-router-dom";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LanguageIcon from "@material-ui/icons/Language";
 import "./Projects.scss";
@@ -13,6 +12,8 @@ const projects = [
     description:
       "An expense web application to track income and expenses. Manage your transactions, and set a budget by category and period.",
     languages: ["React", "Material UI", "SASS"],
+    githubUrl: "https://github.com/monalizadsg/my-budgetapp",
+    websiteUrl: "https://homeexpensify.netlify.app",
   },
   {
     id: 2,
@@ -21,6 +22,8 @@ const projects = [
     description:
       "A personal portfolio website and blog to showcase my skills. Blog is powered by Sanity CMS.",
     languages: ["React", "Material UI", "SASS", "Sanity"],
+    githubUrl: "https://github.com/monalizadsg/my-portfolio",
+    websiteUrl: "https://github.com/monalizadsg/my-portfolio",
   },
   {
     id: 3,
@@ -29,6 +32,8 @@ const projects = [
     description:
       "A simple e-commerce web application that allows user to purchase, edit or remove items.",
     languages: ["React", "Material UI", "SASS", "Firebase"],
+    githubUrl: "https://github.com/monalizadsg/my-store",
+    websiteUrl: "https://my-ecommerce-store-9d101.web.app/",
   },
 ];
 
@@ -68,12 +73,20 @@ const Projects = () => {
                   })}
                 </div>
                 <div className='link'>
-                  <Link to='/'>
+                  <a
+                    href={project.githubUrl}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     <GitHubIcon className='icon' />
-                  </Link>
-                  <Link to='/'>
+                  </a>
+                  <a
+                    href={project.websiteUrl}
+                    target='_blank'
+                    rel='noopener noreferrer'
+                  >
                     <LanguageIcon className='icon' />
-                  </Link>
+                  </a>
                 </div>
               </CardContent>
             </Card>
