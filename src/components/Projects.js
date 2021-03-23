@@ -1,5 +1,6 @@
 import React from "react";
 import { Card, CardContent, Typography, Chip } from "@material-ui/core";
+import { budgetapp, portfolio, teeshop } from "../images/index";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LanguageIcon from "@material-ui/icons/Language";
 import "./Projects.scss";
@@ -8,7 +9,7 @@ const projects = [
   {
     id: 1,
     title: "HomeExpensify",
-    imgUrl: "/assets/images/budgetapp.png",
+    imgUrl: budgetapp,
     description:
       "An expense web application to track income and expenses. Manage your transactions, and set a budget by category and period.",
     languages: ["React", "Material UI", "SASS"],
@@ -18,7 +19,7 @@ const projects = [
   {
     id: 2,
     title: "Portfolio Website",
-    imgUrl: "/assets/images/portfolio.png",
+    imgUrl: portfolio,
     description:
       "A personal portfolio website and blog to showcase my skills. Blog is powered by Sanity CMS.",
     languages: ["React", "Material UI", "SASS", "Sanity"],
@@ -28,7 +29,7 @@ const projects = [
   {
     id: 3,
     title: "TeeShop",
-    imgUrl: "/assets/images/teeshop.png",
+    imgUrl: teeshop,
     description:
       "A simple e-commerce web application that allows user to purchase, edit or remove items.",
     languages: ["React", "Material UI", "SASS", "Firebase"],

@@ -3,6 +3,16 @@ import Typed from "react-typed";
 import { Typography, Grid } from "@material-ui/core";
 import GitHubIcon from "@material-ui/icons/GitHub";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import {
+  hero,
+  css,
+  html,
+  javascript,
+  materialui,
+  sass,
+  reactjs,
+  firebase,
+} from "../images/index";
 import "./Home.scss";
 
 const Home = () => {
@@ -29,11 +39,7 @@ const Home = () => {
           </div>
         </div>
         <div className='image-wrapper'>
-          <img
-            src={"/assets/images/hero.png"}
-            alt='hero art'
-            className='image'
-          />
+          <img src={hero} alt='hero art' className='image' />
         </div>
       </div>
       <main>
@@ -67,7 +73,7 @@ const Home = () => {
                     <div className='skill-card'>
                       <div className='skill-title'>HTML5</div>
                       <div className='skill-logo'>
-                        <img src={"/assets/images/html.png"} alt='icon' />
+                        <img src={html} alt='icon' />
                       </div>
                     </div>
                   </Grid>
@@ -75,7 +81,7 @@ const Home = () => {
                     <div className='skill-card'>
                       <div className='skill-title'>CSS3</div>
                       <div className='skill-logo'>
-                        <img src={"/assets/images/css.png"} alt='icon' />
+                        <img src={css} alt='icon' />
                       </div>
                     </div>
                   </Grid>
@@ -83,7 +89,7 @@ const Home = () => {
                     <div className='skill-card'>
                       <div className='skill-title'>JavaScript</div>
                       <div className='skill-logo'>
-                        <img src={"/assets/images/javascript.png"} alt='icon' />
+                        <img src={javascript} alt='icon' />
                       </div>
                     </div>
                   </Grid>
@@ -91,7 +97,7 @@ const Home = () => {
                     <div className='skill-card'>
                       <div className='skill-title'>React</div>
                       <div className='skill-logo'>
-                        <img src={"/assets/images/reactjs.png"} alt='icon' />
+                        <img src={reactjs} alt='icon' />
                       </div>
                     </div>
                   </Grid>
@@ -99,7 +105,7 @@ const Home = () => {
                     <div className='skill-card'>
                       <div className='skill-title'>Sass</div>
                       <div className='skill-logo'>
-                        <img src={"/assets/images/sass.png"} alt='icon' />
+                        <img src={sass} alt='icon' />
                       </div>
                     </div>
                   </Grid>
@@ -107,7 +113,7 @@ const Home = () => {
                     <div className='skill-card'>
                       <div className='skill-title'>Material UI</div>
                       <div className='skill-logo'>
-                        <img src={"/assets/images/materialui.png"} alt='icon' />
+                        <img src={materialui} alt='icon' />
                       </div>
                     </div>
                   </Grid>
@@ -115,7 +121,7 @@ const Home = () => {
                     <div className='skill-card'>
                       <div className='skill-title'>Firebase</div>
                       <div className='skill-logo'>
-                        <img src={"/assets/images/firebase.png"} alt='icon' />
+                        <img src={firebase} alt='icon' />
                       </div>
                     </div>
                   </Grid>
