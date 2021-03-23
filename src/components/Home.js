@@ -43,23 +43,20 @@ const Home = () => {
               <h2 className='heading'>About</h2>
             </div>
             <p>
-              I was first introduced to coding because of my curiosity. I
-              started learning HTML, CSS, and Javascript. And now, I'm currently
-              learning React to further my knowledge of front-end development.
-              I'm very passionate about learning and coding has been playing a
-              huge part in my daily life for the past few months. I'm a
-              self-driven person who enjoys building apps and websites, eager to
-              learn new skills, and I quickly learn by doing which always takes
-              me out of my comfort zone.
+              I'm an aspiring front-end developer. I'm very passionate about
+              learning and coding has been playing a huge part in my daily life.
+              I'm a self-driven person who enjoys building apps and websites,
+              eager to learn new skills, and I quickly learn by doing which
+              always takes me out of my comfort zone.
             </p>
             <p>
               I'm fascinated with technology as there is so much to learn new
-              things every day. Along my learning journey, I was able to train
-              myself consistently and pushing my limits to discover ways how to
-              solve a problem. I firmly believe that practice is the key to
-              become better at something. I always enjoy learning new things and
-              coding keeps challenging me and makes me uncomfortable but I know
-              that it is the only way to learn and grow.
+              things every day. I firmly believe that practice is the key to
+              become better at something. With that, I was able to train myself
+              consistently and pushing my limits to discover ways how to solve a
+              problem. I always enjoy learning new things and coding keeps
+              challenging me and it offers a room of creativity which keeps me
+              motivated.
             </p>
 
             <div>
