@@ -3,11 +3,14 @@ import { Link } from "react-router-dom";
 import sanityClient from "../../client";
 import { format } from "date-fns";
 import "./BlogPosts.scss";
+import Loading from "../Loading";
 
 const BlogPosts = () => {
   const [postsData, setPostsData] = useState(null);
+  const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
+    setIsLoading(true);
     sanityClient
       .fetch(
         `*[_type == "post"]{
@@ -21,6 +24,7 @@ const BlogPosts = () => {
           .slice()
           .sort((a, b) => new Date(b.publishedAt) - new Date(a.publishedAt));
         setPostsData(sortedData);
+        setIsLoading(false);
       })
       .catch(console.error);
   }, []);
@@ -33,6 +37,7 @@ const BlogPosts = () => {
         journey, what I learned along the way and life in general.
       </p>
       <div className='posts-wrapper'>
+        <Loading isLoading={isLoading} />
         {postsData &&
           postsData.map((post, index) => (
             <div key={index} className='post'>

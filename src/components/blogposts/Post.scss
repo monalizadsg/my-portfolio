@@ -3,13 +3,36 @@
 .post {
   width: 80%;
   margin: 50px auto;
+  margin-top: 80px;
   line-height: 1.6;
   font-size: 1rem;
   letter-spacing: 0.02em;
 
   .title {
+    padding-top: 20px;
     text-align: center;
   }
+
+  .image {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+
+    img {
+      width: 80%;
+    }
+  }
+
+  .body {
+    a {
+      color: #d196df;
+    }
+  }
+}
+
+.loading {
+  margin-top: 100px;
+  text-align: center;
 }
 
 blockquote {
