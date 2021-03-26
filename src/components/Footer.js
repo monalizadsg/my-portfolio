@@ -6,8 +6,22 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className='social-icons'>
-        <GitHubIcon className='icon' />
-        <LinkedInIcon className='icon' />
+        <a
+          className='link'
+          href='https://github.com/monalizadsg'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <GitHubIcon className='icon' />
+        </a>
+        <a
+          className='link'
+          href='https://www.linkedin.com/in/monaliza-dasig/'
+          target='_blank'
+          rel='noopener noreferrer'
+        >
+          <LinkedInIcon className='icon' />
+        </a>
       </div>
       <p>
         Coded with <span className='heart-emoji'>❤ </span>by

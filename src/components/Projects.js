@@ -24,7 +24,7 @@ const projects = [
       "A personal portfolio website and blog to showcase my skills. Blog is powered by Sanity CMS.",
     languages: ["React", "Material UI", "SASS", "Sanity"],
     githubUrl: "https://github.com/monalizadsg/my-portfolio",
-    websiteUrl: "https://github.com/monalizadsg/my-portfolio",
+    websiteUrl: "https://monalizadasig.netlify.app/home",
   },
   {
     id: 3,
