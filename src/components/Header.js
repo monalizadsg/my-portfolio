@@ -53,7 +53,7 @@ const useStyles = makeStyles({
 });
 
 const navLinks = [
-  { title: "home", path: "/home" },
+  { title: "home", path: "/" },
   { title: "projects", path: "/projects" },
   { title: "blog", path: "/blog" },
 ];
@@ -78,6 +78,7 @@ const Header = () => {
                 to={path}
                 className={classes.linkText}
                 activeClassName={classes.activeLinkText}
+                exact
               >
                 <ListItem button>
                   <ListItemText primary={title} />
