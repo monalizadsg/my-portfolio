@@ -49,7 +49,13 @@ const Projects = () => {
             className={`project-card ${project.id % 2 === 0 ? "left" : ""}`}
           >
             <Card className='image-wrapper'>
-              <img src={project.imgUrl} alt='budget' className='image' />
+              <a
+                href={project.websiteUrl}
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                <img src={project.imgUrl} alt='budget' className='image' />
+              </a>
             </Card>
             <Card className='project-details'>
               <CardContent>
