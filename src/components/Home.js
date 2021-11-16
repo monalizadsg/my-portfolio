@@ -63,11 +63,18 @@ const Home = () => {
               <h2 className='heading'>About</h2>
             </div>
             <p>
-              I'm an aspiring front-end developer. I'm very passionate about
-              learning and coding has been playing a huge part in my daily life.
-              I'm a self-driven person who enjoys building apps and websites,
-              eager to learn new skills, and I quickly learn by doing which
-              always takes me out of my comfort zone.
+              I'm a front-end developer at{" "}
+              <a href='https://www.spce.com/'>SPCE</a>, a digital salesroom
+              company. My responsibilities include converting design layouts
+              into code, implementing mobile responsive design, and integrating
+              back-end APIs.
+            </p>
+            <p>
+              I'm very passionate about learning and coding has been playing a
+              huge part in my daily life. I'm a self-driven person who enjoys
+              building apps and websites, eager to learn new skills, and I
+              quickly learn by doing which always takes me out of my comfort
+              zone.
             </p>
             <p>
               I'm fascinated with technology as there is so much to learn new
