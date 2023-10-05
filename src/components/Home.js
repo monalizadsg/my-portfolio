@@ -159,10 +159,6 @@ const Home = () => {
             <p>Get in touch with me through these contacts:</p>
             <div className='contact-details'>
               <div className='detail'>
-                <div>Contact number</div>
-                <p>+63 9277912637</p>
-              </div>
-              <div className='detail'>
                 <div>Email Address</div>
                 <p>monalizadasig@gmail.com</p>
               </div>
