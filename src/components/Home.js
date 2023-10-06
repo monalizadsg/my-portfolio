@@ -63,27 +63,19 @@ const Home = () => {
               <h2 className='heading'>About</h2>
             </div>
             <p>
-              I'm a front-end developer at{" "}
-              <a href='https://www.spce.com/'>SPCE</a>, a digital salesroom
-              company. My responsibilities include converting design layouts
-              into code, implementing mobile responsive design, and integrating
-              back-end APIs.
+              I previously worked as a front-end developer at{" "}
+              <a href='https://www.spce.com/'>SPCE</a>, a digital platform
+              that serves as a defined space for B2B deals. My responsibilities include converting design layouts
+              into code, implementing mobile responsive designs, and integrating
+              back-end and third-party APIs.
             </p>
+    
             <p>
-              I'm very passionate about learning and coding has been playing a
-              huge part in my daily life. I'm a self-driven person who enjoys
-              building apps and websites, eager to learn new skills, and I
-              quickly learn by doing which always takes me out of my comfort
-              zone.
-            </p>
-            <p>
-              I'm fascinated with technology as there is so much to learn new
-              things every day. I firmly believe that practice is the key to
-              become better at something. With that, I was able to train myself
-              consistently and pushing my limits to discover ways how to solve a
-              problem. I always enjoy learning new things and coding keeps
-              challenging me and it offers a room of creativity which keeps me
-              motivated.
+              Extremely motivated to constantly learn, develop my skills and grow professionally. 
+              I'm fascinated with technology as it offers endless opportunities for learning 
+              something new every day. I firmly believe that practice is the key to
+              become better at something. Through consistent learning and pushing my own limits,
+              I've honed my ability to find innovative solutions to problems. 
             </p>
 
             <div>
@@ -156,17 +148,7 @@ const Home = () => {
             <div>
               <h2 className='heading'>Contact Me</h2>
             </div>
-            <p>Get in touch with me through these contacts:</p>
-            <div className='contact-details'>
-              <div className='detail'>
-                <div>Contact number</div>
-                <p>+63 9277912637</p>
-              </div>
-              <div className='detail'>
-                <div>Email Address</div>
-                <p>monalizadasig@gmail.com</p>
-              </div>
-            </div>
+            <p>Get in touch with me through email at monalizadasig@gmail.com</p>
           </section>
         </article>
       </main>
